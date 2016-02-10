@@ -1,0 +1,50 @@
+img,
+video,
+audio,
+iframe,
+table,
+form {
+    width: 100%;
+    /* IE */
+    max-width: 100%;
+    /* FF, Safari, Chrome */
+}
+
+
+/******layout styler*****/
+
+.row {
+    margin-bottom: 12px;
+}
+
+.container {
+  max-width: 80%;
+}
+
+/************ carousel styles *******/
+
+#caousel-example-generic .item img {
+  height: auto;
+}
+.carousel-caption p {
+  display: none;
+}
+
+@madia only screen and (min-width: 768px) {
+  #caousel-example-generic .item img {
+    height: 384px;
+  }
+}
+@madia only screen and (min-width: 992px) {
+  #caousel-example-generic .item img {
+    height: 496px;
+  }
+  .carousel-caption p {
+    display: block;
+  }
+}
+@madia only screen and (min-width: 1200px) {
+  #caousel-example-generic .item img {
+    height: 600px;
+  }
+}
